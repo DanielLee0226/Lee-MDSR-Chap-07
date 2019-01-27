@@ -362,6 +362,23 @@ coef(lm(total ~ Salary, data = filter(SAT_2010, SAT_grp == "High")))
 ```{r}
 # p. 164
 
-coef(lm(total ~ Salary, data = filter(SAT_2010, SAT_grp == "High")))
+SAT_mod2 <-
+  lm(total ~ Salary +
+       sat_pct, data = SAT_2010)
+msummary(SAT_mod2)
 
 ```
+
+## Section 7.7
+```{r}
+# p. 166
+
+1 - (1-0.05)^5
+```
+
+```{r}
+# p. 166
+
+1 - (1-.01)^5
+```
+
