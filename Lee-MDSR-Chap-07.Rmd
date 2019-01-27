@@ -130,6 +130,7 @@ rbind(Trials %>%
   facet_grid( ~ n) +
   xlab("Sample mean")
 ```
+Figure 7.1: The sampling distribution of the mean arrival delay with a sample size of n = 25 (left) and also for a larger sample size of n = 100 (right).
 
 ## Section 7.3
 ```{r}
@@ -236,6 +237,7 @@ SF %>%
   geom_histogram(binwidth = 15)
 
 ```
+Figure 7.2: Distribution of flight arrival delays in 2013 for flights to San Francisco from NYC airports that were delayed less than seven hours. The distribution features a long right tail (even after pruning the outliers).
 
 ```{r}
 # p. 159
@@ -266,6 +268,7 @@ geom_boxplot(alpha = 0.1, aes(group = hour)) +
   coord_cartesian(ylim = c(-30, 120))
 
 ```
+Figure 7.3: Association of flight arrival delays with scheduled departure time for flights to San Francisco from New York airports in 2013.
 
 ```{r}
 # p. 160
